@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - main function
  *
@@ -6,36 +7,36 @@
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-	int k = '0';
+	int i, j, k, limit;
 
-	while (i <= '7')
+	limit = 10;
+
+	for (i = 0; i < limit; i++)
 	{
-		while (j <= '8')
+		for (j = 1; j < limit; j++)
 		{
-			while (k <= '9')
+			for (k = 0; k < limit; k++)
 			{
-				if (i < j && j < k)
+				if (k > j && j > i)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (!(i == '7' && j == '8' && k == '9'))
+					putchar(48 + i);
+					putchar(48 + j);
+					putchar(48 + k);
+
+					if (j == limit - 2 && i == limit - 3 &&
+					    k == limit - 1)
+						putchar('\n');
+					else
 					{
 						putchar(',');
 						putchar(' ');
 					}
-
 				}
-				k++;
+				else
+					continue;
 			}
-			k = '0';i
-			j++;
 		}
-		j = '0';
-		i++;
 	}
-	putchar('\n');
+
 	return (0);
 }
