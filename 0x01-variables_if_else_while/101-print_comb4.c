@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * in main it prints numbers from 00 to 99.
+ *prints numbers from 00 to 99.
 (*
- * and return: 0 on success
+ *return: 0 on success
  */
 int main(void)
 {
