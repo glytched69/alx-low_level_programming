@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *prints numbers from 00 to 99.
-(*
- *return: 0 on success
+ * main - main function
+ *
+ * Return: 0 expected
  */
 int main(void)
 {
@@ -30,7 +30,7 @@ int main(void)
 				}
 				k++;
 			}
-			k = '0';
+			k = '0';i
 			j++;
 		}
 		j = '0';
